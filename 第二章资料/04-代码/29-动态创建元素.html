@@ -16,8 +16,8 @@
 <input type="button" value="$()" id="btn1"/> <br/><br/>
 
 <div id="div1">
-  <p>p1
-    <span>span1</span>
+  <p>p标签的内容
+    <span>span标签的内容</span>
   </p>
 </div>
 
@@ -36,7 +36,7 @@
     //1.html();
     //设置或者获取内容的.
     $('#btnHtml1').click(function () {
-      //1.1 获取内容: html()方法不给参数
+      //1.1 获取内容: html()方法不给参数，获取到元素的所有内容
       //获取到元素的所有内容.
       // console.log($('#div1').html());
 
@@ -52,7 +52,7 @@
     $('#btn1').click(function () {
       var $link = $('<a href="http://news.baidu.com/">我是新闻</a>');
       //console.log($link);
-      //追加节点.
+      //追加节点.在id是#div1的后面添加我是新闻
       $('#div1').append($link);
     });
 

@@ -56,6 +56,7 @@
     //3.选中的到右边.
     $('#btn-sel').click(function () {
       //找到左边select下拉菜单中,被选中的option项, 把这些option项添加到右边的select下拉菜单中.
+        // 使用selected过滤器，哪个选项选中，得到哪个对象
       $('#src-city>option:selected').appendTo($('#tar-city'));
     });
 

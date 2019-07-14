@@ -93,7 +93,7 @@
        for(var i = 0 ; i < data.length; i++){
        	//生成tr.
          list.push("<tr>");
-         //生成td
+         //生成td，遍历数组对象
          for(var key in data[i]){
            list.push('<td>');
            list.push(data[i][key]);
